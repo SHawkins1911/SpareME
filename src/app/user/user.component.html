@@ -1,0 +1,39 @@
+<div>
+    <img class="profile-photo" src="../../assets/images/stefunChampionship.jpg">
+</div>
+<div class="mx-auto container row">
+    <section id="user_info" class="col-md-4 col-xs-12 user-details">
+            <div class="card text-dark">
+                <div class="card-body">
+                    <h5 class="card-title">User Info</h5>
+                <span>{{this.user.name}}</span>
+                <span>{{this.user.email}}</span>
+            </div>    
+        </div>
+    </section>
+
+    <section id = "bowler_info" class="col-md-4 col-xs-12 user-details">
+        <div class="card text-dark">
+            <div class="card-body">
+                <h5 class="card-title">Bowler Info</h5>
+                <span>{{this.user.bowlingHand}}</span>
+                <span>{{this.user.bowlingStyle.toString()}}</span>
+                <span>{{this.user.ballSpeed}}</span>
+                <span>{{this.user.usbc}}</span>
+                <span>{{this.user.expirationDateUsbc}}</span>   
+                <span>{{this.user.tnba}}</span>
+                <span>{{this.user.expirationDateTnba}}</span> 
+            </div>
+        </div>
+    </section>
+
+    <section id = "bowling_balls" class="col-md-4 col-xs-12 user-details">
+        <div class="card text-dark">
+         <div class="card-body">
+                <h5 class="card-title">Bowling Balls</h5>
+                <span *ngFor="let ball of user.bowlingBall">{{ball}}</span>
+            </div>
+        </div> 
+    </section>
+    
+</div>

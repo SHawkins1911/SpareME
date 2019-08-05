@@ -1,0 +1,37 @@
+<div class="container">
+<section id="statistics" class="row mt-5">
+    <div class="col-md-6">
+    <details *ngFor="let league of leagues" class="my-3" >
+        <summary>{{league.name}} - {{league.location}}</summary>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Night #</th>
+                    <th scope="col">Game 1</th>
+                    <th scope="col">Game 2</th>
+                    <th scope="col">Game 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col">1</th>
+                    <td>{{league.scores[0]}}</td>
+                    <td>{{league.scores[1]}}</td>
+                    <td>{{league.scores[2]}}</td>
+                </tr>
+            </tbody>
+          </table>
+    </details>
+    </div>
+    <div class="col-md-6">
+        <canvas
+            baseChart
+            [chartType]="'line'"
+            [datasets]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+            [legend]="false">
+        </canvas>
+    </div>
+</section>
+</div>
