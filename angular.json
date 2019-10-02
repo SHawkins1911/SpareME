@@ -25,7 +25,9 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/fonts/material-icons/material-icons.css",
+              "src/assets/fonts/glyphicons/glyphicons.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

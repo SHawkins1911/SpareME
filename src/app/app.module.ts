@@ -17,6 +17,9 @@ import { AdminComponent } from './componets/admin/admin.component';
 import { NotFoundComponent } from './componets/not-found/not-found.component';
 import { UnauthorizedComponent } from './componets/unauthorized/unauthorized.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
